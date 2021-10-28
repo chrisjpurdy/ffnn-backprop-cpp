@@ -6,7 +6,7 @@ int main() {
 
     std::srand(time(nullptr));
 
-    auto ds = DatasetStore("/Users/chrispy/Desktop/train-labels-idx1-ubyte", "/Users/chrispy/Desktop/train-images-idx3-ubyte");
+    auto ds = DatasetStore("../datasets/train-labels-idx1-ubyte", "../datasets/train-images-idx3-ubyte");
 
     std::cout << ds.getLabel(10005) << std::endl;
     DatasetStore::showDigit(ds.getDigit(10005).data());
